@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <p id="demo"></p>
+  <script>
+
+      // Constructor function for Person objects
+      function Person(first, last, age, eye) {
+          this.firstName = first;
+          this.lastName = last;
+          this.age = age;
+          this.eyeColor = eye;
+      }
+      
+      // Create a Person object
+      var myFather = new Person("Oleg", "Ivanov", 28, "blue");
+      
+      // Display age
+      document.getElementById("demo").innerHTML =
+      "My developed is Oleg.Ianov" + myFather.age + "."; 
+      
+      </script>
+</body>
+</html>
