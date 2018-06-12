@@ -1,12 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <h1>Hello world</h1>
+  <p id="demo"></p>
+  <script>
+
+      // Constructor function for Person objects
+      function Person(first, last, age, eye) {
+          this.firstName = first;
+          this.lastName = last;
+          this.age = age;
+          this.eyeColor = eye;
+      }
+      
+      // Create a Person object
+      var myFather = new Person("Oleg", "Ivanov", 28, "blue");
+      
+      // Display age
+      document.getElementById("demo").innerHTML =
+      "My developed is Oleg.Ianov" + myFather.age + "."; 
+      
+      </script>
 </body>
 </html>
